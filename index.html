@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fancify Shamcify</title>
+    </head>
+		<!-- link to your script file here -->
+      <script src="fancifymytext.js" defer></script>
+		<!-- Your UI controls go here -->
+<style>
+  /* Styling for radiobuttons*/
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+  legend {
+    font-weight: bold;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+</style>
+
+<body>
+<!-- Make sure your text area has an id attribute so your JS code can talk to it -->
+    <fieldset>
+      <legend>Text </legend>
+      <textarea id="myText" rows="4" cols="29" placeholder="Enter text"></textarea>
+    </fieldset>
+
+    <fieldset>
+
+      <label>
+        <input type="radio" id="Fancy" value="FancyShmancy" name="rb" onchange="Fancy()" />
+
+         FancyShmancy
+       </label><br>
+
+      <label>
+        <input type="radio" id="Boring" value="BoringBetty" name="rb" onchange="Boring()" />
+        BoringBetty
+      </label><br>
+
+      <button id="Bigger" onclick ="SizeUp()" >Bigger! </button>
+      <button id="Moo" onclick ="Moo()" >Moo! </button>
+
+
+    </fieldset>
+
+
+
+</body>
